@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  p
+    | The form accepts an integer&nbsp;
+    code key
+    |  and proves&nbsp;
+    code publicKey == generator
+      sup key
+    |  for some&nbsp;
+    code  publicKey
+    |  found in&nbsp;
+    code verify.txt
+    |.
+  p The proof is sent to the server for authentication.
+  form#formLogin(action='/', method='POST')
+    div
+      label Private Key:
+      input(type="text", name="k", id="k", required)
+    div
+      input(type="submit", value="Log in" id='login')
+
+  p#invalid
