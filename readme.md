@@ -4,7 +4,7 @@ The init button generates a integral `key` and a `publicKey` such that `publicKe
 `publicKey` is stored in a file `verify.txt`.
 
 ## login
-The form accepts an integer `key` and proves `publicKey == generator`<sup>key</sup> for some `publicKey` found in `verify.txt`.
+The form accepts an integer `key` and proves `publicKey == generator` <sup>key</sup> for some `publicKey` found in `verify.txt`.
 
 The proof is sent to the server for authentication.
 
