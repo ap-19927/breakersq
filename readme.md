@@ -21,6 +21,8 @@ The proof is sent to the server for authentication.
 
 2. [snarkjs](https://github.com/iden3/snarkjs)
 
+4. [zk-treasure hunt](https://zk-treasure-hunt.glitch.me/)
+
 2. [webCrypto sha256](//https://jameshfisher.com/2017/10/30/web-cryptography-api-hello-world/)
 
 6. [why-is-an-object-in-an-xmlhttprequest-sent-to-a-node-express-server-empty](https://stackoverflow.com/questions/32084571/why-is-an-object-in-an-xmlhttprequest-sent-to-a-node-express-server-empty?noredirect=1&lq=1)
