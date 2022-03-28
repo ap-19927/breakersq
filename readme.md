@@ -13,8 +13,9 @@ The proof is sent to the server for authentication.
 
 1. please excuse the poorly written code including the lack of comments.
 
-2. have snarkjs done in browser 
+2. have snarkjs done in browser
 
+=======
 ### References
 
 1. [sjcl](https://github.com/bitwiseshiftleft/sjcl/)
