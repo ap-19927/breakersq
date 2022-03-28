@@ -19,7 +19,11 @@ The proof is sent to the server for authentication.
 
 1. [sjcl](https://github.com/bitwiseshiftleft/sjcl/)
 
-2. [snarkjs](https://github.com/iden3/snarkjs)
+2. [snarkjs](https://github.com/iden3/snarkjs/)
+
+3. [circom](https://github.com/iden3/circom/)
+
+4. [zk-treasure-hunt](//https://glitch.com/edit/#!/zk-treasure-hunt)
 
 2. [webCrypto sha256](//https://jameshfisher.com/2017/10/30/web-cryptography-api-hello-world/)
 

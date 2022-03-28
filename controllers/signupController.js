@@ -6,7 +6,7 @@ exports.signup_get = (req, res) => {
 };
 
 exports.signup_post = async (req, res, next) => {
-  console.log(req.body.publicKey)
+  //console.log(req.body.publicKey)
   fsLibrary.writeFile('./public/verify.txt', req.body.publicKey+'\n', { flag: 'a' }, (error) => {
     // In case of a error throw err exception.
     if (error) console.error(error);
