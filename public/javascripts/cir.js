@@ -1,3 +1,7 @@
+/*
+excerpt from https://zk-treasure-hunt.glitch.me/
+*/
+
 import WC from "../circuit_js/witness_calculator.esm.js";
 
 //const bGenProof = document.getElementById("bGenProof");
