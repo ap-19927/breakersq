@@ -1,7 +1,7 @@
 const User = require('../models/user');
 const fsLibrary  = require('fs');
 exports.signup_get = (req, res) => {
-  if (req.session.challenge) return res.redirect('/')
+  if (req.isAuthenticated()) return res.redirect('/')
   res.render('signup', { title: 'Signup' })
 };
 
