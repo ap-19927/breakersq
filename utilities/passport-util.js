@@ -7,7 +7,9 @@ module.exports = (app, passport) => {
   async function(req, done) {
     if(!req.body.publicSignals) return await done(null,false);
     else {
-      if(req.body.publicSignals[0]==='0') {
+      const vKey = JSON.parse(fs.readFileSync("./public/circuit_js/verification_key.json"));
+      const res = await snarkjs.plonk.verify(vKey, req.body.publicSignals, req.body.proof)
+      if(req.body.publicSignals[0]==='0' && res) {
         return await done(null, req.body.proof);
       }
       else return await done(null,false);

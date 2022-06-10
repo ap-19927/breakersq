@@ -48,8 +48,7 @@ jQuery("#formLogin").submit(async function (event) {
   async function run() {
     for await (let line of makeTextFileLineIterator('./verify.txt')) {
       if(publicKey==line) {
-        //const circuit = await calculateProof(publicKey,line).then(c => {return c})
-        const circuit = await calculateProof(11,11).then(c => {return c})
+        const circuit = await calculateProof(publicKey,line).then(c => {return c})
         if(circuit.verify) return circuit
       }
     }
