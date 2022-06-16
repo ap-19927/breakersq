@@ -21,14 +21,14 @@ app.use(compression());
 
 const helmet = require('helmet');
 const trusted = [
-  "'self'","'unsafe-eval'","'unsafe-inline'",
+  "'self'",
 ];
-app.use(helmet({ contentSecurityPolicy: {
-  directives: {
-      scriptSrc: ['code.jquery.com',,].concat(trusted),
-  }},
-  crossOriginEmbedderPolicy: false,
-}));
+// app.use(helmet({ contentSecurityPolicy: {
+//   directives: {
+//       scriptSrc: ['code.jquery.com',].concat(trusted),
+//   }},
+//   crossOriginEmbedderPolicy: false,
+// }));
 
 const session = require('express-session'),
       MongoStore = require('connect-mongo');

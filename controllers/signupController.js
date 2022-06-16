@@ -1,12 +1,12 @@
 const User = require('../models/user');
 const fsLibrary  = require('fs');
 exports.signup_get = (req, res) => {
-  if (req.session.challenge) return res.redirect('/')
+  if (req.isAuthenticated()) return res.redirect('/')
   res.render('signup', { title: 'Signup' })
 };
 
 exports.signup_post = async (req, res, next) => {
-  console.log(req.body.publicKey)
+  //console.log(req.body.publicKey)
   fsLibrary.writeFile('./public/verify.txt', req.body.publicKey+'\n', { flag: 'a' }, (error) => {
     // In case of a error throw err exception.
     if (error) console.error(error);

@@ -24,11 +24,12 @@ code {
   font-family: 'Courier New';
 }
 footer {
-   position:absolute;
+   position: absolute;
    bottom:0;
    width:100%;
-   height:60px;   /* Height of the footer */
+   height:60px;
 }
 .right {
   text-align: right;
+  right:0;
 }

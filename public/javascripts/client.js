@@ -56,10 +56,9 @@ const gen = async (key) => {
   .then(result => {
     return result
   });
-  key = key.toString(16)
-  publicKey = publicKey.toString(16)
+  const l = publicKey.toString(16).length
   return { key: key.toString(16),
-          public: {publicKey: publicKey.toString(16)},
+          public: {publicKey: publicKey.toString(16).slice(0,l-1)},
         }
 }
 

@@ -9,11 +9,10 @@ router.get('/', (req, res) => {
     return
   }
   res.render('index', {
-    title: 'Breakersq',
+    title: 'home',
     user: JSON.stringify(req.user)
   })
 })
-
 
 /* Signup */
 router.get('/signup', signup_controller.signup_get);
